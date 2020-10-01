@@ -75,7 +75,9 @@ nav ul{
 .inner-text i{
     font-size:50px;
     color: #F56476;
-    text-shadow: 5px 5px #DFBBB1
+    position: relative;
+    text-shadow: 5px 5px #DFBBB1;
+    left: -17px;
 }
 .text button{
     width:200px;
@@ -133,6 +135,7 @@ nav ul{
     color: #F56476;
     border-radius: 50px;
     border:2px solid #F56476;
+    transition: 0.2s all;
 
 }
 .boxs button:hover{
@@ -252,6 +255,7 @@ img{
     color: #F56476;
     border-radius: 50px;
     border:2px solid #F56476;
+    transition: 0.2s all;
 
 }
 .writewithus .buttons button:hover{

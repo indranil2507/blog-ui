@@ -29,14 +29,14 @@
                   <h1>Categories</h1> 
                   <ul>
                    
-                    <li class="active">
+                    <li class="link active">
                       <span>S</span>ports
                     </li>
-                    <li>
-                      <span>S</span>ports
+                    <li class="link">
+                      <span>F</span>orbes
                     </li>
-                    <li>
-                      <span>S</span>ports
+                    <li class="link">
+                      <span>E</span>lection
                     </li>
                   </ul>
                     
@@ -215,6 +215,19 @@
       </div>
        
     </div>
+    <script>
+      const links = Array.from(document.querySelectorAll('.link'));
+      links.forEach( (link) => {
+        link.addEventListener( 'click', () => {
+         const active = Array.from(document.querySelectorAll('.active'))
+         active.forEach( (activelink) => {
+          activelink.classList.remove('active')
+         })
+          link.classList.toggle('active')
+
+        })
+      } )
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
